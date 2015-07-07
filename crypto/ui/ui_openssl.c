@@ -220,6 +220,10 @@
 #undef SGTTY
 #endif
 
+#define TERMIOS
+#undef TERMIO
+#undef SGTTY
+
 #ifdef TERMIOS
 # include <termios.h>
 # define TTY_STRUCT		struct termios
